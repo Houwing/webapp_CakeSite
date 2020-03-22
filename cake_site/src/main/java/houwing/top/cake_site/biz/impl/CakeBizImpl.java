@@ -30,10 +30,10 @@ public class CakeBizImpl implements CakeBiz {
         return cakeDao.selectAll();
     }
 
-    public Cake getSpecial() {
+    public List<Cake> getSpecial() {
         List<Cake> list = cakeDao.selectByStatus("特卖");
         if(list.size()>0)
-            return list.get(0);
+            return list;
         return null;
     }
 

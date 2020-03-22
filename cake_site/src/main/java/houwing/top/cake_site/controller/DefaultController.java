@@ -11,6 +11,8 @@ import houwing.top.cake_site.biz.impl.CatalogBizImpl;
 import houwing.top.cake_site.entity.Account;
 import houwing.top.cake_site.entity.Cake;
 import houwing.top.cake_site.entity.Catalog;
+import org.apache.log4j.Logger;
+import sun.rmi.runtime.Log;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +21,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class DefaultController {
+    Logger log= Logger.getLogger(DefaultController.class);
     private AccountBiz accountBiz=new AccountBizImpl();
     private CakeBiz cakeBiz=new CakeBizImpl();
     private CatalogBiz catalogBiz=new CatalogBizImpl();
@@ -54,8 +57,9 @@ public class DefaultController {
         * 2.推荐商品
         * 3.分类
         * */
-        Cake special = cakeBiz.getSpecial();
-        request.setAttribute("cake",special);
+        List<Cake> special = cakeBiz.getSpecial();
+        request.setAttribute("specialList",special);
+        log.info("specialList: "+special);
         List<Cake> list = cakeBiz.getForIndex();
         request.setAttribute("list",list);
 
