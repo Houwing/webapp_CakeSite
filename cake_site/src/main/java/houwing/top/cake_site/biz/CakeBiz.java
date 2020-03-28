@@ -11,7 +11,7 @@ public interface CakeBiz {
     Cake get(int id);
     List<Cake> getAll();
 
-    Cake getSpecial();
+    List<Cake> getSpecial();
     List<Cake> getForIndex();
     List<Cake> getForCatalog(int cid);
 }
