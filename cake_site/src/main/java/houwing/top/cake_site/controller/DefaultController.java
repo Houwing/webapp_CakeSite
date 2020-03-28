@@ -5,12 +5,16 @@ import com.github.pagehelper.PageInfo;
 import houwing.top.cake_site.biz.AccountBiz;
 import houwing.top.cake_site.biz.CakeBiz;
 import houwing.top.cake_site.biz.CatalogBiz;
+import houwing.top.cake_site.biz.UserBiz;
 import houwing.top.cake_site.biz.impl.AccountBizImpl;
 import houwing.top.cake_site.biz.impl.CakeBizImpl;
 import houwing.top.cake_site.biz.impl.CatalogBizImpl;
+import houwing.top.cake_site.biz.impl.UserBizImpl;
 import houwing.top.cake_site.entity.Account;
 import houwing.top.cake_site.entity.Cake;
 import houwing.top.cake_site.entity.Catalog;
+import org.apache.log4j.Logger;
+import sun.rmi.runtime.Log;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -19,8 +23,10 @@ import java.io.IOException;
 import java.util.List;
 
 public class DefaultController {
+    Logger log= Logger.getLogger(DefaultController.class);
     private AccountBiz accountBiz=new AccountBizImpl();
     private CakeBiz cakeBiz=new CakeBizImpl();
+    private UserBiz userBiz=new UserBizImpl();
     private CatalogBiz catalogBiz=new CatalogBizImpl();
 
     // /toLogin.do
@@ -54,8 +60,9 @@ public class DefaultController {
         * 2.推荐商品
         * 3.分类
         * */
-        Cake special = cakeBiz.getSpecial();
-        request.setAttribute("cake",special);
+        List<Cake> special = cakeBiz.getSpecial();
+        request.setAttribute("specialList",special);
+        log.info("specialList: "+special);
         List<Cake> list = cakeBiz.getForIndex();
         request.setAttribute("list",list);
 
@@ -83,4 +90,43 @@ public class DefaultController {
         request.setAttribute("cake",cake);
         request.getRequestDispatcher("/WEB-INF/pages/detail.jsp").forward(request,response);
     }
+    // /toRegist.do
+    public void toRegist(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/WEB-INF/pages/regist.jsp").forward(request,response);
+    }
+
+    public void regist(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String userpass = request.getParameter("userpass");
+        String nickname = request.getParameter("nickname");
+        int priotiry=0;
+        Account account=new Account(username,userpass,nickname,priotiry);
+        userBiz.insertUser(account);
+        response.sendRedirect("/index.do");
+    }
+    // /login.do
+    public void userLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession().setAttribute("ALART",null);
+        String username = request.getParameter("username");
+        String userpass = request.getParameter("userpass");
+        Account account=new Account();
+        account.setUserpass(userpass);
+        account.setUsername(username);
+        Account USER = userBiz.selectByUsername(account);
+        if (USER != null) {
+            if (USER.getUsername() != null) {
+                request.getSession().setAttribute("USER",USER);
+            }else {
+                request.getSession().setAttribute("ALART","admin or locking");
+            }
+        }
+        response.sendRedirect("/index.do");
+    }
+    // /login.do
+    public void userQuit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        request.getSession().setAttribute("USER", null);
+        response.sendRedirect("/index.do");
+    }
+
 }

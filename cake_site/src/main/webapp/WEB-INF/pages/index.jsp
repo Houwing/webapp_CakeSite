@@ -8,16 +8,54 @@
 
 <jsp:include page="top.jsp"/>
 <!--banner-->
-<div class="banner">
-    <div class="container">
-        <h2 class="hdng">IMOOC <span>蛋糕</span></h2>
-        <p>特别的日子，特别的你</p>
-        <a href="/detail.do?id=${cake.id}">SHOP NOW</a>
-        <div class="banner-text">
-            <img src="${cake.image}" alt=""/>
+<c:if test="${ALART!=null}">
+    <div class="alert alert-info" role="alert">${ALART}</div>
+</c:if>
+
+
+<div class="row">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <c:forEach items="${specialList}" var="cake" varStatus="index">
+               <c:if test="${index.count==1}"><div class="item active"></c:if>
+                <c:if test="${index.count>1}"> <div class="item">  </c:if>
+                        <div class="banner">
+                            <div class="container">
+                                <h2 class="hdng">${cake.cakename}</h2>
+                                <p>特别的日子，特别的你</p>
+                                <a href="/detail.do?id=${cake.id}">SHOP NOW</a>
+                                <div class="banner-text">
+                                    <img src="${cake.image}" alt="${cake.cakename}"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </c:forEach>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </div>
+
+
+
 <!--//banner-->
 
 <!--gallery-->

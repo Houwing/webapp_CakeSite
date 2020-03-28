@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
@@ -76,6 +77,47 @@
                         <span class="sidebar-title">添加分类</span>
                     </a>
                 </li>
+                <li class="sidebar-label pt20">用户管理</li>
+
+                <li class="active">
+                    <a href="/admin/User/list.do">
+                        <span class="glyphicon glyphicon-book"></span>
+                        <span class="sidebar-title">普通用户列表</span>
+                    </a>
+                </li>
+                <c:if test="${ACCOUNT.priority==2}">
+                    <li class="active">
+                        <a href="/admin/Account/list.do">
+                            <span class="glyphicon glyphicon-book"></span>
+                            <span class="sidebar-title">用户列表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/Account/toAdd.do">
+                            <span class="glyphicon glyphicon-home"></span>
+                            <span class="sidebar-title">添加用户</span>
+                        </a>
+                    </li>
+                </c:if>
+                    <c:if test="${ACCOUNT.priority<2}">
+                        <li class="active">
+                            <a >
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="sidebar-title">用户列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="glyphicon glyphicon-home"></span>
+                                <span class="sidebar-title">添加用户</span>
+                            </a>
+                        </li>
+                    </c:if>
+
+
+
+
+
             </ul>
             <div class="sidebar-toggle-mini">
                 <a href="login.html">
