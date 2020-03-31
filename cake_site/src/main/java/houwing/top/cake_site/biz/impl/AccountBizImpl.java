@@ -21,4 +21,26 @@ public class AccountBizImpl implements AccountBiz {
         }
         return null;
     }
+
+    public List<Account> getAllAdmin() {
+        return accountDao.getAllAdmin();
+    }
+
+    public void insertAccount(Account account) {
+        accountDao.insertAccount(account);
+    }
+
+    public Account selectById(int id) {
+        return accountDao.selectById(id);
+    }
+
+    public void updateAccount(Account account) {
+        accountDao.updateAccount(account);
+    }
+
+    public void deleteAccount(int id) {
+        accountDao.deleteAccount(id);
+    }
+
+
 }
