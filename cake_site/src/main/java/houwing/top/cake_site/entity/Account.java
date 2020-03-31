@@ -6,6 +6,35 @@ public class Account {
     private String userpass;
     private String nickname;
     private int priority;
+    private boolean lock;
+
+    public boolean isLock() {
+        return lock;
+    }
+
+    public void setLock(boolean lock) {
+        this.lock = lock;
+    }
+
+    public Account() {
+
+    }
+
+    public Account(int id, boolean lock) {
+        this.id = id;
+        this.lock = lock;
+    }
+
+    public Account(int priority) {
+        this.priority = priority;
+    }
+
+    public Account(String username, String userpass, String nickname, int priority) {
+        this.username = username;
+        this.userpass = userpass;
+        this.nickname = nickname;
+        this.priority = priority;
+    }
 
     public Account() {
 

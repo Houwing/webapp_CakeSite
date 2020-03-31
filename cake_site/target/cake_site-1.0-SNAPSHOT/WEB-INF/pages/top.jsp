@@ -85,23 +85,44 @@
             </div>
             <div class="header-right login">
                 <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-                <div id="loginBox">
-                    <form id="loginForm">
-                        <fieldset id="body">
-                            <fieldset>
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email">
+                <c:if test="${USER==null}">
+                    <div id="loginBox">
+                        <form id="loginForm" method="post" action="/userLogin.do">
+                            <fieldset id="body">
+                                <fieldset>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="password">Password</label>
+                                    <input type="password" name="userpass" id="password">
+                                </fieldset>
+                                <input type="submit" id="login" value="登录">
+                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住</i></label>
                             </fieldset>
+                            <p>新用户 ? <a class="sign" href="/toRegist.do">注册</a><span><a href="#">忘记密码?</a></span></p>
+                        </form>
+                    </div>
+                </c:if>
+                <c:if test="${USER!=null}">
+                    <div id="loginBox">
+
                             <fieldset>
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password">
+                                <fieldset>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username" value="${USER.username}" readonly>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="password">id</label>
+                                    <input type="text" name="userpass" id="id" value="${USER.id}" readonly>
+                                </fieldset>
+                                <a class="btn-primary" href="/userQuit.do">登出</a>
                             </fieldset>
-                            <input type="submit" id="login" value="登录">
-                            <label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住</i></label>
-                        </fieldset>
-                        <p>新用户 ? <a class="sign" href="#">注册</a><span><a href="#">忘记密码?</a></span></p>
-                    </form>
-                </div>
+
+
+                    </div>
+                </c:if>
+
             </div>
             <div class="header-right cart">
                 <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>

@@ -16,6 +16,7 @@ public class LoginFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse)resp;
         HttpServletRequest request=(HttpServletRequest)req;
         Object object= request.getSession().getAttribute("ACCOUNT");
+
         if(object==null){
 //            object= new Account();
             response.sendRedirect("/toLogin.do");
@@ -24,6 +25,7 @@ public class LoginFilter implements Filter {
             System.out.println("do filter");
             chain.doFilter(request,response);
         }
+
     }
 
     public void destroy() {

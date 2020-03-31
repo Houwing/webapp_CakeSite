@@ -13,7 +13,8 @@ public interface AccountDao {
             @Result(column = "username",property = "username"),
             @Result(column = "userpass",property = "userpass"),
             @Result(column = "nickname",property = "nickname"),
-            @Result(column = "priority",property = "priority")
+            @Result(column = "priority",property = "priority"),
+            @Result(column = "islock",property = "lock")
     })
     List<Account> selectByName(String name);
 
