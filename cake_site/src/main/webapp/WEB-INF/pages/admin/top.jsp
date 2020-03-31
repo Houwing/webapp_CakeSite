@@ -78,7 +78,12 @@
                     </a>
                 </li>
                 <li class="sidebar-label pt20">用户管理</li>
-
+                <li class="active">
+                    <a href="/admin/User/list.do">
+                        <span class="glyphicon glyphicon-book"></span>
+                        <span class="sidebar-title">普通用户列表</span>
+                    </a>
+                </li>
                 <c:if test="${ACCOUNT.priority==2}">
                     <li class="active">
                         <a href="/admin/Account/list.do">

@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee5a149-3cad-48de-a4e3-36c7c210419a" name="Default Changelist" comment="" />
+    <list default="true" id="4ee5a149-3cad-48de-a4e3-36c7c210419a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cake_site-1.0-SNAPSHOT/WEB-INF/classes/houwing/top/cake_site/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cake_site-1.0-SNAPSHOT/WEB-INF/classes/houwing/top/cake_site/dao/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cake_site-1.0-SNAPSHOT/WEB-INF/classes/houwing/top/cake_site/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cake_site-1.0-SNAPSHOT/WEB-INF/classes/houwing/top/cake_site/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cake_site-1.0-SNAPSHOT/WEB-INF/classes/houwing/top/cake_site/global/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cake_site-1.0-SNAPSHOT/WEB-INF/classes/houwing/top/cake_site/global/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/houwing/top/cake_site/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/houwing/top/cake_site/dao/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/houwing/top/cake_site/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/houwing/top/cake_site/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/houwing/top/cake_site/global/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/houwing/top/cake_site/global/LoginFilter.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,73 +64,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/top.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/dao/AccountDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/global/GlobalController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/global/LoginFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="52" />
+            <state relative-caret-position="-667">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/account_edit.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="35" column="122" selection-start-line="35" selection-start-column="122" selection-end-line="35" selection-end-column="122" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/account_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="28" column="118" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="118" />
+            <state relative-caret-position="210">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -129,42 +84,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/entity/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="37">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/biz/AccountBiz.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/biz/impl/AccountBizImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -186,6 +116,10 @@
       <find>catalog</find>
       <find>name</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -230,8 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/java/houwing/top/cake_site/biz/CakeBiz.java" />
         <option value="$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/DefaultController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/houwing/top/cake_site/entity/Account.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/account_add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/account_edit.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/720157d4-e485-4773-85a4-cbc5d8649b75/console.sql" />
@@ -241,6 +173,8 @@
         <option value="$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/account_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/houwing/top/cake_site/global/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/houwing/top/cake_site/entity/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp" />
       </list>
     </option>
   </component>
@@ -300,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -456,15 +392,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585376963798" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585683341586" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -617,16 +551,26 @@
       <workItem from="1584780301366" duration="4563000" />
       <workItem from="1584886050343" duration="9328000" />
       <workItem from="1585372114503" duration="4849000" />
+      <workItem from="1585684023442" duration="72000" />
     </task>
+    <task id="LOCAL-00001" summary="增加用户管理功能，处理整合冲突v1.1">
+      <created>1585683110766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585683110766</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96614000" />
+    <option name="totallyTimeSpent" value="97163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26675603" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27010724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -636,20 +580,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7666195" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.76628894" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32531825" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32956153" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32956153" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32956153" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -664,18 +608,26 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加用户管理功能，处理整合冲突v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加用户管理功能，处理整合冲突v1.1" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Program Files (x86)/JDK/lib/src.zip!/java.base/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="511" column="17" selection-start-line="511" selection-start-column="17" selection-end-line="511" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/catelog_list.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/buttom.jsp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -731,13 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://720157d4-e485-4773-85a4-cbc5d8649b75/schema/commercial_db/table/categories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://720157d4-e485-4773-85a4-cbc5d8649b75/schema/commercial_db/table/categories" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/catalog_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-492">
@@ -835,13 +781,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://720157d4-e485-4773-85a4-cbc5d8649b75/schema/commercial_db/table/cake">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://720157d4-e485-4773-85a4-cbc5d8649b75/schema/commercial_db/table/cake" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -956,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="104" column="45" lean-forward="true" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/account_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -994,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/720157d4-e485-4773-85a4-cbc5d8649b75/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1008,13 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://720157d4-e485-4773-85a4-cbc5d8649b75/schema/commercial_db/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://720157d4-e485-4773-85a4-cbc5d8649b75/schema/commercial_db/table/user" />
     <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/biz/impl/AccountBizImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1032,13 +952,6 @@
             <element signature="e#1105#1106#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1086,6 +999,34 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-667">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/houwing/top/cake_site/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
         </state>
       </provider>
     </entry>
