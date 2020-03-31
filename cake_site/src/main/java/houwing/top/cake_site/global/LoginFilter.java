@@ -1,5 +1,7 @@
 package houwing.top.cake_site.global;
 
+import houwing.top.cake_site.entity.Account;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,12 +16,16 @@ public class LoginFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse)resp;
         HttpServletRequest request=(HttpServletRequest)req;
         Object object= request.getSession().getAttribute("ACCOUNT");
+
         if(object==null){
+//            object= new Account();
             response.sendRedirect("/toLogin.do");
+//            chain.doFilter(request,response);
         }else {
             System.out.println("do filter");
             chain.doFilter(request,response);
         }
+
     }
 
     public void destroy() {

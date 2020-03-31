@@ -25,6 +25,9 @@ public class GlobalController extends HttpServlet {
         //截取path
         if(path.indexOf("/admin")!=-1){
           path=path.substring(7);
+        }else if(path.indexOf("/my")!=-1){
+            path=path.substring(4);
+
         }else {
             path=path.substring(1);
         }

@@ -39,6 +39,14 @@
                 <p class="detail_attr"><strong>口味&nbsp;:&nbsp;</strong>${cake.taste}</p>
                 <p class="detail_attr"><strong>适应场合&nbsp;:&nbsp;</strong>${cake.catalog.name}</p>
                 <p class="detail_attr"><strong>原材料&nbsp;:&nbsp;</strong>${cake.ingredients}</p>
+                <form method="post" action="/my/Cart/addCart.do">
+                    <input type="hidden" name="userId" value="${USER.id}">
+                    <input type="hidden" name="cakeId" value="${cake.id}">
+                    <button type="submit" class="btn-primary">
+                        <div class="glyphicon glyphicon-shopping-cart"/>
+                        <span>加入购物车</span>
+                    </button>
+                </form>
             </div>
         </div>
     </div>

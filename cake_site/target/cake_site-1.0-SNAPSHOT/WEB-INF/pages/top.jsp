@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1 class="navbar-brand"><a  href="index.do">MY_CAKE</a></h1>
+                <h1 class="navbar-brand"><a  href="/index.do">MY_CAKE</a></h1>
             </div>
             <!--navbar-header-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -85,31 +85,52 @@
             </div>
             <div class="header-right login">
                 <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-                <div id="loginBox">
-                    <form id="loginForm">
-                        <fieldset id="body">
-                            <fieldset>
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email">
+                <c:if test="${USER==null}">
+                    <div id="loginBox">
+                        <form id="loginForm" method="post" action="/userLogin.do">
+                            <fieldset id="body">
+                                <fieldset>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="password">Password</label>
+                                    <input type="password" name="userpass" id="password">
+                                </fieldset>
+                                <input type="submit" id="login" value="登录">
+                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住</i></label>
                             </fieldset>
+                            <p>新用户 ? <a class="sign" href="/toRegist.do">注册</a><span><a href="#">忘记密码?</a></span></p>
+                        </form>
+                    </div>
+                </c:if>
+                <c:if test="${USER!=null}">
+                    <div id="loginBox">
+
                             <fieldset>
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password">
+                                <fieldset>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username" value="${USER.username}" readonly>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="password">id</label>
+                                    <input type="text" name="userpass" id="id" value="${USER.id}" readonly>
+                                </fieldset>
+                                <a class="btn-primary" href="/userQuit.do">登出</a>
                             </fieldset>
-                            <input type="submit" id="login" value="登录">
-                            <label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住</i></label>
-                        </fieldset>
-                        <p>新用户 ? <a class="sign" href="#">注册</a><span><a href="#">忘记密码?</a></span></p>
-                    </form>
-                </div>
+
+
+                    </div>
+                </c:if>
+
             </div>
             <div class="header-right cart">
-                <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                <a href="/my/Cart/list.do?id=${USER.id}"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
                 <div class="cart-box">
                     <h4><a href="#">
                         <span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>)
                     </a></h4>
-                    <p><a href="#" class="simpleCart_empty">空</a></p>
+                    <p><a href="/my/Cart/list.do?id=${USER.id}" class="simpleCart_empty">空</a></p>
                     <div class="clearfix"> </div>
                 </div>
             </div>
