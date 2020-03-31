@@ -8,9 +8,11 @@
 
 <jsp:include page="top.jsp"/>
 <!--banner-->
+
 <c:if test="${ALART!=null}">
     <div class="alert alert-info" role="alert">${ALART}</div>
 </c:if>
+
 
 
 <div class="row">

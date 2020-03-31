@@ -9,5 +9,8 @@
         <module name="cake_site" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cake_site" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
