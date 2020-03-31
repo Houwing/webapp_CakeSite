@@ -36,16 +36,7 @@ public class Account {
         this.priority = priority;
     }
 
-    public Account() {
 
-    }
-
-    public Account(String username, String userpass, String nickname, int priority) {
-        this.username = username;
-        this.userpass = userpass;
-        this.nickname = nickname;
-        this.priority = priority;
-    }
 
     @Override
     public String toString() {
