@@ -113,6 +113,14 @@
                             </a>
                         </li>
                     </c:if>
+                <li class="sidebar-label pt20">订单管理</li>
+
+                <li class="active">
+                    <a href="/admin/Order/list.do">
+                        <span class="glyphicon glyphicon-book"></span>
+                        <span class="sidebar-title">订单列表</span>
+                    </a>
+                </li>
 
 
 
